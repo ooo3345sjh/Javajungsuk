@@ -32,6 +32,7 @@ public class CalendarExample07 {
 		System.out.println(sdf6.format(today));
 		System.out.println(sdf7.format(today));
 		System.out.println(sdf8.format(today));
+		System.out.println(sdf9.format(today));
 		
 		
 		

@@ -14,6 +14,8 @@ public class CalendarExample00 {
 
 		int thisYear = today.get(Calendar.YEAR); //올해가 몇년인지 알아낸다.
 		System.out.println("올해는 " + thisYear + "입니다.");
+		
+		today.set(Calendar.DAY_OF_MONTH, 24);
 
 		int lastDayOfMonth = today.getActualMaximum(Calendar.DATE); //이달의 마지막날
 		System.out.println("이 달의 마지막날은 : " +lastDayOfMonth);
@@ -42,7 +44,9 @@ public class CalendarExample00 {
 		//천분의 1초를 시간으로 표시하기 위해 3600000으로 나누었다.(1시간 = 60 * 60)
 		//한국과 TimeZone의 시차는 9시간 
 		System.out.println("TimeZone(-12~+12)_GMT기준 시차(천분의 일초단위): " 
-		+ today.get(Calendar.ZONE_OFFSET)/(60*60*1000));
+		+ today.get(Calendar.ZONE_OFFSET));///(60*60*1000));
+		
+		System.out.println("이 달의 마지막 날: " + today.getActualMaximum(Calendar.DATE));
 		
 		
 	}
